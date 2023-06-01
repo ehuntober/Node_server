@@ -24,6 +24,14 @@ app.get('/about', (req,res) =>{
     })
 })
 
+app.get('/contact', (req,res) =>{
+    // res.send('about page')
+    res.render('contact.hbs',{
+        currentYear: new Date().getFullYear()
+    })
+})
+
+
 app.get('/bad',(req,res)=>{
     res.send({
         errormessage: 'Unable to handle request'
