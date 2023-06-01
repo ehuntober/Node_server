@@ -12,6 +12,11 @@ hbs.registerHelper('getCurrentYear', ()=>{
 
 })
 
+hbs.registerHelper('streamIt', (text)=>{
+    return text.toUpperCase()
+
+})
+
 app.get('/',(req,res) =>{
     res.render('home.hbs',{
         pageTitle: 'Home page',
