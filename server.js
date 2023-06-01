@@ -3,16 +3,15 @@ const hbs = require('hbs')
 
 var app = express()
 
+hbs.registerPartials('/views/partials')
 app.set('view engine', 'hbs')
 app.use(express.static(__dirname + '/public'))
 
 app.get('/',(req,res) =>{
-    res.send({
-        name: 'kelechi',
-        like:[
-            'cities',
-            'buses'
-        ]
+    res.render('home.hbs',{
+        pageTitle: 'Home page',
+        welcome: 'Welcome to my website',
+        currentYear: new Date().getFullYear()
     })
 })
 
