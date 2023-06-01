@@ -1,0 +1,16 @@
+{
+  "name": "express_routes",
+  "version": "1.0.0",
+  "description": "express_routes",
+  "main": "main",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ehuntober",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "hbs": "^4.2.0"
+  }
+}
